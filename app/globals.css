@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/**
+ * Theme tokens.
+ *
+ * Colors are expressed as raw HSL channels (e.g. "220 20% 18%") so Tailwind's
+ * `<alpha-value>` syntax can apply opacity. The monochrome accent is the only
+ * chromatic color in the system; everything else is a neutral tuned for each
+ * theme. Change the accent in ONE place (`--accent` below) to re-skin the site.
+ */
+@layer base {
+  :root {
+    /* Neutrals — light theme */
+    --background: 0 0% 100%; /* pure white */
+    --foreground: 220 26% 14%; /* dark charcoal */
+    --muted: 220 20% 97%; /* very light gray sections */
+    --muted-foreground: 220 12% 42%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 26% 14%;
+    --border: 220 16% 92%;
+    --input: 220 16% 90%;
+    --ring: 220 20% 18%;
+
+    /* Accent — monochrome (near-black) */
+    --accent: 220 20% 18%;
+    --accent-foreground: 0 0% 100%;
+    --accent-subtle: 220 20% 97%;
+
+    --radius: 0.875rem;
+  }
+
+  .dark {
+    /* Neutrals — dark theme */
+    --background: 222 24% 7%;
+    --foreground: 210 20% 96%;
+    --muted: 220 20% 12%;
+    --muted-foreground: 218 12% 62%;
+    --card: 222 22% 9%;
+    --card-foreground: 210 20% 96%;
+    --border: 220 16% 18%;
+    --input: 220 16% 20%;
+    --ring: 210 20% 80%;
+
+    /* Accent — monochrome (near-white) */
+    --accent: 210 20% 96%;
+    --accent-foreground: 220 26% 14%;
+    --accent-subtle: 220 20% 18%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    /* Offset anchored scroll targets for the sticky navbar height. */
+    scroll-padding-top: 5rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "cv11", "ss01";
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Consistent, accessible focus treatment. */
+  :focus-visible {
+    @apply outline-none ring-2 ring-ring ring-offset-2 ring-offset-background;
+  }
+
+  ::selection {
+    @apply bg-accent/20 text-foreground;
+  }
+
+  /* Respect reduced-motion at the platform level. */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  /* Section vertical rhythm — generous, "let it breathe" spacing. */
+  .section {
+    @apply scroll-mt-24 py-24 sm:py-28 lg:py-32;
+  }
+
+  /* Small uppercase eyebrow label used above section headings. */
+  .eyebrow {
+    @apply inline-flex items-center gap-2 text-sm font-medium tracking-wide text-accent;
+  }
+
+  /* Skeleton shimmer for loading states. */
+  .skeleton {
+    @apply relative overflow-hidden rounded-md bg-muted;
+  }
+  .skeleton::after {
+    @apply absolute inset-0 -translate-x-full animate-shimmer bg-gradient-to-r from-transparent via-foreground/5 to-transparent content-[''];
+  }
+}
