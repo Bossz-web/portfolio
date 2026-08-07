@@ -32,7 +32,7 @@ export function Education() {
             const Icon = iconByType[item.type];
             return (
               <RevealItem key={`${item.institution}-${index}`}>
-                <div className="group flex gap-4 rounded-2xl border border-border bg-card p-6 transition-all duration-300 hover:border-accent/40 hover:shadow-card">
+                <div className="group flex gap-4 rounded-2xl border border-border bg-card p-6 transition-all duration-300 hover:border-accent/40 hover:shadow-soft">
                   <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-accent-subtle text-accent transition-transform duration-300 group-hover:scale-110">
                     <Icon className="h-5 w-5" />
                   </span>

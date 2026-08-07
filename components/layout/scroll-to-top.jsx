@@ -22,7 +22,7 @@ export function ScrollToTop() {
           initial={{ opacity: 0, scale: 0.8, y: 8 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.8, y: 8 }}
-          className="fixed bottom-6 right-6 z-50 inline-flex h-11 w-11 items-center justify-center rounded-full border border-border bg-card text-foreground shadow-card transition-colors hover:border-accent/50 hover:text-accent"
+          className="fixed bottom-6 right-6 z-50 inline-flex h-11 w-11 items-center justify-center rounded-full border border-border bg-card text-foreground shadow-soft transition-colors hover:border-accent/50 hover:text-accent"
           aria-label="Scroll back to top"
         >
           <ArrowUp className="h-5 w-5" />

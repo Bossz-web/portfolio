@@ -28,6 +28,15 @@
     --accent-foreground: 0 0% 100%;
     --accent-subtle: 220 20% 97%;
 
+    /* Elevation. `--shadow-color` keeps drop shadows dark in BOTH themes (never
+     * derive them from --foreground, which inverts to white in dark mode).
+     * `--shadow-boost` scales every shadow alpha at once, since dark surfaces
+     * need more opacity to read. `--rim` is the top highlight on raised edges. */
+    --shadow-color: 220 26% 14%;
+    --shadow-boost: 1;
+    --rim: 0 0% 100% / 0.55;
+    --rim-strong: 0 0% 100% / 0.7;
+
     --radius: 0.875rem;
   }
 
@@ -47,6 +56,13 @@
     --accent: 210 20% 96%;
     --accent-foreground: 220 26% 14%;
     --accent-subtle: 220 20% 18%;
+
+    /* Elevation — near-black shadows, boosted, with a whisper of a rim. A white
+     * rim above ~10% reads as a glowing seam against the dark background. */
+    --shadow-color: 222 47% 2%;
+    --shadow-boost: 2.2;
+    --rim: 210 20% 96% / 0.07;
+    --rim-strong: 210 20% 96% / 0.1;
   }
 }
 
@@ -57,8 +73,8 @@
 
   html {
     scroll-behavior: smooth;
-    /* Offset anchored scroll targets for the sticky navbar height. */
-    scroll-padding-top: 5rem;
+    /* Offset anchored scroll targets for the floating navbar (pt + height). */
+    scroll-padding-top: 6.5rem;
     -webkit-text-size-adjust: 100%;
   }
 

@@ -59,10 +59,22 @@ module.exports = {
       maxWidth: {
         content: "72rem",
       },
+      /* Elevation is driven by `--shadow-color`, `--shadow-boost`, and `--rim`
+       * (see globals.css) so shadows stay dark and rims stay subtle in dark
+       * mode. Tune the feel per theme there, not here. */
       boxShadow: {
-        subtle: "0 1px 2px 0 hsl(var(--foreground) / 0.04)",
-        card: "0 4px 24px -8px hsl(var(--foreground) / 0.08)",
-        elevated: "0 16px 48px -16px hsl(var(--foreground) / 0.16)",
+        subtle:
+          "0 1px 2px 0 hsl(var(--shadow-color) / calc(0.04 * var(--shadow-boost)))",
+        /* Named `soft`, not `card`: a boxShadow key that matches a color key
+         * makes Tailwind emit a competing `shadow-<name>` color utility that
+         * wins the cascade and repaints the shadow in that color. */
+        soft: "0 4px 24px -8px hsl(var(--shadow-color) / calc(0.08 * var(--shadow-boost)))",
+        elevated:
+          "0 16px 48px -16px hsl(var(--shadow-color) / calc(0.16 * var(--shadow-boost)))",
+        /* Directional "raised" shadows: lit top rim + drop below the pill. */
+        pop: "inset 0 1px 0 0 hsl(var(--rim)), 0 10px 24px -8px hsl(var(--shadow-color) / calc(0.22 * var(--shadow-boost))), 0 4px 8px -4px hsl(var(--shadow-color) / calc(0.14 * var(--shadow-boost)))",
+        "pop-lg":
+          "inset 0 1px 0 0 hsl(var(--rim-strong)), 0 20px 44px -12px hsl(var(--shadow-color) / calc(0.30 * var(--shadow-boost))), 0 6px 14px -6px hsl(var(--shadow-color) / calc(0.20 * var(--shadow-boost)))",
       },
       keyframes: {
         "fade-up": {

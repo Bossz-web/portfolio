@@ -106,7 +106,7 @@ export function Contact() {
 
           {/* Right: form / success state */}
           <Reveal delay={0.1}>
-            <div className="rounded-2xl border border-border bg-card p-6 shadow-card sm:p-8">
+            <div className="rounded-2xl border border-border bg-card p-6 shadow-soft sm:p-8">
               <AnimatePresence mode="wait">
                 {status === "success" ? (
                   <motion.div

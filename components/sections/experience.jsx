@@ -26,7 +26,7 @@ export function Experience() {
                 </span>
 
                 <Reveal>
-                  <div className="rounded-2xl border border-border bg-card p-6 transition-all duration-300 hover:border-accent/40 hover:shadow-card">
+                  <div className="rounded-2xl border border-border bg-card p-6 transition-all duration-300 hover:border-accent/40 hover:shadow-soft">
                     <div className="flex flex-wrap items-start justify-between gap-2">
                       <div>
                         <h3 className="text-lg font-semibold text-foreground">

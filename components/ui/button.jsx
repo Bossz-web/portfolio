@@ -16,7 +16,7 @@ const base =
 /** @type {Record<ButtonVariant, string>} */
 const variants = {
   primary:
-    "bg-accent text-accent-foreground shadow-subtle hover:shadow-card hover:brightness-110 active:scale-[0.98]",
+    "bg-accent text-accent-foreground shadow-subtle hover:shadow-soft hover:brightness-110 active:scale-[0.98]",
   secondary:
     "bg-foreground text-background hover:opacity-90 active:scale-[0.98]",
   outline:

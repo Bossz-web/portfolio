@@ -11,11 +11,11 @@ export const personalInfo = {
   headline: "I build fast, secure interfaces for fintech.",
   role: "Frontend Engineer",
   summary:
-    "Frontend Engineer with 1+ years shipping complex fintech features — digital payments, biometric authentication, and real-time interfaces. I care about clean, accessible UIs and integrations that make financial tools simpler and safer.",
-  bio: "A frontend engineer focused on fintech — where clean code, secure authentication, and thoughtful interfaces make financial tools people can actually trust.",
+    "Frontend Engineer with 1+ years shipping complex fintech features digital payments, biometric authentication, and real-time interfaces. I care about clean, accessible UIs and integrations that make financial tools simpler and safer.",
+  bio: "A frontend engineer focused on fintech  where clean code, secure authentication, and thoughtful interfaces make financial tools people can actually trust.",
   story: [
-    "I'm a frontend engineer at MSME Labs, where I build and maintain user-facing modules for a fintech web application — from end-to-end payment flows and biometric authentication to real-time notifications and account statements. I gravitate toward problems where the interface has to be both effortless to use and genuinely secure.",
-    "I'm largely self-taught and I learn fast. I picked up WebAuthn, MediaPipe's ML APIs, and Capacitor native deployment on my own while shipping features on tight deadlines — including LiveSense, a browser-native facial liveness detection system I built solo to fight identity spoofing in remote KYC.",
+    "I'm a frontend engineer at MSME Labs, where I build and maintain user-facing modules for a fintech web application from end-to-end payment flows and biometric authentication to real-time notifications and account statements. I gravitate toward problems where the interface has to be both effortless to use and genuinely secure.",
+    "I'm largely self-taught and I learn fast. I picked up WebAuthn, MediaPipe's ML APIs, and Capacitor native deployment on my own while shipping features on tight deadlines including LiveSense, a browser-native facial liveness detection system I built solo to fight identity spoofing in remote KYC.",
     "Right now I'm expanding into backend development with Node.js, advanced TypeScript patterns, and system design, on the way to becoming a more complete engineer. When I'm heads-down, I'm usually chasing a subtle UI bug that everyone else walked past.",
   ],
   location: "Lagos, Nigeria",

@@ -18,7 +18,7 @@ export function About() {
         <div className="mt-14 grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
           {/* Portrait */}
           <Reveal className="relative mx-auto w-full max-w-sm">
-            <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-border bg-muted shadow-card">
+            <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-border bg-muted shadow-soft">
               <Image
                 src={personalInfo.aboutImage}
                 alt={`${personalInfo.name} at work`}
@@ -44,7 +44,7 @@ export function About() {
                 const Icon = strength.icon;
                 return (
                   <RevealItem key={strength.title}>
-                    <div className="group h-full rounded-xl border border-border bg-card p-5 transition-all duration-200 hover:-translate-y-0.5 hover:border-accent/40 hover:shadow-card">
+                    <div className="group h-full rounded-xl border border-border bg-card p-5 transition-all duration-200 hover:-translate-y-0.5 hover:border-accent/40 hover:shadow-soft">
                       <span className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-accent-subtle text-accent transition-transform duration-200 group-hover:scale-110">
                         <Icon className="h-5 w-5" />
                       </span>

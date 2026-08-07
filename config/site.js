@@ -12,13 +12,13 @@
  * @type {import('@/types').SeoConfig}
  */
 export const siteConfig = {
-  siteName: "Lolade Kolawole — Frontend Engineer",
+  siteName: " — Frontend Engineer",
   title: "Ololade · Frontend Engineer",
   description:
     "Frontend Engineer specializing in React, Next.js, and fintech interfaces — digital payments, biometric authentication, and fast, accessible UIs.",
   url: "https://portfolio-cqyoivs1p-bossz-webs-projects.vercel.app",
   ogImage: "/opengraph-image",
-  twitterHandle: "@Anon_jamaal",
+  twitterHandle: "@Ololade_dev",
   keywords: [
     "Frontend Engineer",
     "React Developer",

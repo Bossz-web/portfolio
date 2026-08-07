@@ -38,22 +38,27 @@ export function Navbar() {
   const monogram = "LK";
 
   return (
-    <header
-      className={cn(
-        "fixed inset-x-0 top-0 z-50 transition-all duration-300",
-        scrolled
-          ? "border-b border-border bg-background/80 backdrop-blur-md"
-          : "border-b border-transparent bg-transparent",
-      )}
-    >
-      <nav className="container flex h-16 items-center justify-between">
+    <header className="fixed inset-x-0 top-0 z-50 px-4 pt-4 sm:pt-6">
+      <nav
+        className={cn(
+          "mx-auto flex h-14 max-w-5xl items-center justify-between rounded-full pl-2 pr-2",
+          "border border-border/70 backdrop-blur-xl",
+          "transition-[box-shadow,transform,background-color] duration-300 ease-out",
+          scrolled
+            ? "bg-card/95 shadow-pop-lg sm:-translate-y-0.5"
+            : "bg-card/85 shadow-pop",
+        )}
+      >
         <a
           href="#hero"
-          className="group inline-flex items-center gap-2 rounded-md transition-colors"
+          className="group inline-flex items-center gap-2 rounded-full py-1 pl-1 pr-3 transition-colors"
           aria-label="Lolade Kolawole — home"
         >
-          <span className="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-accent text-accent-foreground font-semibold text-sm tracking-tight transition-transform group-hover:scale-105">
+          <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-accent text-accent-foreground font-semibold text-sm tracking-tight transition-transform group-hover:scale-105">
             {monogram}
+          </span>
+          <span className="hidden text-sm font-semibold tracking-tight text-foreground sm:inline">
+            Lolade Kolawole
           </span>
         </a>
 
@@ -86,7 +91,7 @@ export function Navbar() {
           })}
         </ul>
 
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-1.5">
           <ThemeToggle />
           <Button asChild size="sm" className="hidden md:inline-flex">
             <a href="#contact">Get in touch</a>
