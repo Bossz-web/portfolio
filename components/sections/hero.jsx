@@ -39,7 +39,7 @@ export function Hero() {
             className="mt-6 text-4xl font-semibold leading-[1.05] tracking-tight text-foreground sm:text-6xl"
           >
             {personalInfo.headline}
-            <span className="mt-2 block text-2xl font-normal text-muted-foreground sm:text-3xl">
+            <span className="mt-2 block text-2xl font-normal text-muted-foreground sm:text-2xl">
               Hi, I&apos;m {personalInfo.name}.
             </span>
           </motion.h1>

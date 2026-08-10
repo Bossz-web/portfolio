@@ -13,7 +13,7 @@ export function Experience() {
         <SectionHeading
           eyebrow="Experience"
           title="Where I've made an impact"
-          description="Roles that shaped how I build — from client work to owning a product's front-end platform."
+          description="Roles that shaped how I build from client work to owning a product's front-end platform."
         />
 
         <div className="mt-14 max-w-3xl">

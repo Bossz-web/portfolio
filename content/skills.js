@@ -61,6 +61,7 @@ export const skillCategories = [
       "Node.js (Backend)",
       "Advanced TypeScript Patterns",
       "System Design",
+      "React Native",
     ],
   },
 ];
