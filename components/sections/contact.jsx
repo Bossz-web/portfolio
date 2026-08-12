@@ -169,7 +169,7 @@ export function Contact() {
                         <input
                           id="name"
                           type="text"
-                          placeholder="Jane Doe"
+                          placeholder="Lolade Kolawole"
                           className={fieldClass(!!errors.name)}
                           aria-invalid={!!errors.name}
                           {...register("name")}
@@ -191,7 +191,7 @@ export function Contact() {
                         <input
                           id="email"
                           type="email"
-                          placeholder="jane@company.com"
+                          placeholder="lolade@company.com"
                           className={fieldClass(!!errors.email)}
                           aria-invalid={!!errors.email}
                           {...register("email")}
