@@ -110,6 +110,31 @@ export const projects = [
     },
   },
   {
+    slug: "lagoon-estates",
+    title: "Lagoon Estates — Luxury Real Estate",
+    description:
+      "A multi-page brokerage site for the Lagos luxury property market — filterable listings, property galleries, and agent profiles, all editable from one content folder.",
+    overview:
+      "A boutique Lagos brokerage with waterfront listings across Ikoyi, Victoria Island, Lekki, and Eko Atlantic. Every property, agent, Naira price, and photo lives in a plain-JavaScript content layer, so a real agency's details drop in without touching component code.",
+    image:
+      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1200&q=80",
+    tech: ["Next.js", "JavaScript", "Tailwind CSS"],
+    liveUrl: "https://real-estate-webite-alpha.vercel.app",
+    featured: true,
+    year: 2026,
+    caseStudy: {
+      challenge:
+        "Most Lagos real-estate agencies run entirely on Instagram and WhatsApp — poor catalogues for serious or diaspora buyers comparing many properties, and invisible on Google. They need a site that reads as premium and can be handed to any agency by editing content, not code.",
+      solution:
+        "I built a full multi-page brokerage — home, filterable listings, individual property pages with image galleries, agent profiles, an about page, and a working enquiry form — in Next.js and Tailwind. Listings filter by area, type, and price on the client, and every property, agent, price, and photo is defined in a single /content data layer with typedefs, so re-skinning it for a real agency is a content edit rather than a rebuild.",
+      results: [
+        "Multi-page site: home, listings with live filtering, property galleries, agents, about, contact",
+        "Naira pricing and Lagos neighbourhoods (Ikoyi, VI, Lekki, Eko Atlantic) throughout",
+        "Fully content-driven — a client's branding and listings swap in from one folder",
+      ],
+    },
+  },
+  {
     slug: "developer-portfolio",
     title: "Developer Portfolio Site",
     description:
