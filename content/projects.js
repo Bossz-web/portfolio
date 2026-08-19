@@ -135,6 +135,31 @@ export const projects = [
     },
   },
   {
+    slug: "scents-by-adeshewa",
+    title: "Scents by Adeshewa — Lagos Perfume Shop",
+    description:
+      "An online storefront for a Lagos fragrance seller — Arabian-inspired perfumes, body mists, and attar oils, each with its notes, longevity, and Naira price.",
+    overview:
+      "A working shop for a scent business that previously sold only through Instagram and WhatsApp. Every product, price, and note lives in one editable file, so the owner runs the catalogue without touching code.",
+    image: "/images/scentsbyadeshewa.jpg",
+    tech: ["Next.js", "JavaScript", "Tailwind CSS"],
+    liveUrl: "https://scentsbyadeshewa.vercel.app",
+    repoUrl: "https://github.com/Bossz-web/scentsbyadeshewa",
+    featured: true,
+    year: 2026,
+    caseStudy: {
+      challenge:
+        "Most Lagos perfume sellers run entirely on Instagram and WhatsApp. That's fine for a single post, but a buyer can't browse the full range, compare scents, or see notes and prices in one place — and the shop never turns up when someone searches for it. The owner needed a real catalogue they could keep up to date themselves, without learning to code.",
+      solution:
+        "I built a full storefront on a content-driven architecture — home, a filterable collection, product pages with an interactive scent pyramid, a slide-over bag, and a payment-free demo checkout — with Naira pricing throughout and every scent's notes, longevity, and projection published. All product data lives in a single content file the owner edits, so adding, pricing, or removing a scent is a one-line change. I also added optional per-scent photo support that falls back to a drawn bottle, so the shop looks finished before any product photography exists.",
+      results: [
+        "Six scents across six accord families, each with published notes, longevity, and Naira pricing",
+        "Entire catalogue driven by one editable content file — no code needed to add or price a scent",
+        "Interactive scent pyramid, bag, and payment-free demo checkout, all mobile-first",
+      ],
+    },
+  },
+  {
     slug: "developer-portfolio",
     title: "Developer Portfolio Site",
     description:

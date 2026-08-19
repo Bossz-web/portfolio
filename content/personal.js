@@ -8,11 +8,11 @@ import { Github, Twitter, Mail, ShieldCheck, Wallet, Zap } from "lucide-react";
  */
 export const personalInfo = {
   name: "Lolade Kolawole",
-  headline: "I build fast, secure interfaces for a small, medium and large scale companies",
+  headline: "Building fast, secure fintech interfaces for small, medium, and large-scale companies.",
   role: "Frontend Engineer",
   summary:
-    "Frontend Engineer with 2+ years working experience. I care about clean, accessible UIs and integrations that make financial tools unque, simpler and safer.",
-  bio: "A frontend engineer focused on fintech  where clean code and thoughtful interfaces make financial tools people can definitely trust.",
+    "A web developer with 2+ years working experience. I care about clean, accessible UIs and integrations that make financial tools unque, simpler and safer.",
+  bio: "A frontend engineer specializing in fintech, creating clean, scalable, and secure interfaces for companies of all sizes while delivering financial experiences users can trust",
   story: [
     "I'm a frontend engineer at MSME Labs, where I build and maintain web application for a small, medium and large scale companies.",
     "I'm largely self-taught and I learn fast.",
