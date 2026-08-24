@@ -59,56 +59,32 @@ export const projects = [
       ],
     },
   },
-  {
-    slug: "sillage",
-    title: "SILLAGE — Perfume House",
-    description:
-      "An editorial storefront for a fragrance house, built around an accord-colour system that drives eight fragrances from one code path.",
-    overview:
-      "A perfume house of eight fragrances across seven accord families, with every material named and every scent pyramid published. The palette does information work rather than decoration.",
-    image: "/images/sillage.jpg",
-    tech: ["Next.js", "JavaScript", "Tailwind CSS"],
-    liveUrl: "https://sillage-pied-theta.vercel.app",
-    repoUrl: "https://github.com/Bossz-web/Sillage",
-    featured: true,
-    year: 2025,
-    caseStudy: {
-      challenge:
-        "Fragrance is the hardest product to sell online — you can't sample it through a screen. A storefront has to convey what a scent actually smells like using nothing but type, colour and structure, and it has to do that for eight distinct fragrances without collapsing into eight bespoke layouts.",
-      solution:
-        "I made colour carry meaning: every fragrance belongs to an accord family that owns a colour, bound as CSS custom properties and rebound by an `.accord-<family>` scope. Components never hardcode a family colour, so one code path renders all eight. Because several accords are too dark to read as text, each family carries a second lifted value for type — every combination clears WCAG AA, and the family name is always printed alongside the colour so it's never the sole carrier of meaning. The scent pyramid is a WAI-ARIA tabs pattern with roving tabindex and full keyboard support.",
-      results: [
-        "One component path serving eight fragrances and seven accord families",
-        "AA-contrast colour system with a dual-token scheme for legible accord type",
-        "Keyboard-navigable scent pyramid, cart and checkout with Luhn-validated fields",
-      ],
-    },
-  },
-  {
-    slug: "plumb",
-    title: "PLUMB — Made-to-Measure Fit Engine",
-    description:
-      "A menswear storefront that recommends your size from ease — garment minus body — instead of a generic size chart, with a fit finder and capsule builder.",
-    overview:
-      "A made-to-measure clothing house where every garment publishes its drafted flat measurements. Enter your body measurements and PLUMB recommends the size whose ease lands closest to how the pattern was drafted — the whole site reasons in ease, not S/M/L.",
-    image: "/images/plumb.jpg",
-    tech: ["Next.js", "JavaScript", "Tailwind CSS"],
-    liveUrl: "https://luxury-home-tau.vercel.app",
-    repoUrl: "https://github.com/Bossz-web/Luxury_home",
-    featured: true,
-    year: 2025,
-    caseStudy: {
-      challenge:
-        "Buying clothes online means guessing. Size charts list body measurements, not the garment's, so a shopper can't tell whether a piece will actually fit — and bad fit is the single biggest driver of returns in online apparel. Sizing needs to answer 'will this fit me?' directly, not 'what's your dress size?'.",
-      solution:
-        "I built a fit engine that reasons in ease — garment measurement minus body measurement. Every garment publishes the flat measurements it was drafted with; the app takes the shopper's body measurements and recommends the size whose ease at the governing measurement (chest for tops, seat for trousers) lands closest to the drafted intent. It's built on a drafting-paper design system where every measurement is tabular and aligned like a spec sheet, with a keyboard-navigable fit finder and a capsule builder that checks how a coordinated set layers together.",
-      results: [
-        "Size recommendation from ease at the governing measurement — chest for tops, seat for trousers",
-        "Every garment publishes drafted flat measurements, not just a body-size chart",
-        "Capsule builder that validates layering across a coordinated outfit",
-      ],
-    },
-  },
+  // {
+  //   slug: "sillage",
+  //   title: "SILLAGE — Perfume House",
+  //   description:
+  //     "An editorial storefront for a fragrance house, built around an accord-colour system that drives eight fragrances from one code path.",
+  //   overview:
+  //     "A perfume house of eight fragrances across seven accord families, with every material named and every scent pyramid published. The palette does information work rather than decoration.",
+  //   image: "/images/sillage.jpg",
+  //   tech: ["Next.js", "JavaScript", "Tailwind CSS"],
+  //   liveUrl: "https://sillage-pied-theta.vercel.app",
+  //   repoUrl: "https://github.com/Bossz-web/Sillage",
+  //   featured: true,
+  //   year: 2025,
+  //   caseStudy: {
+  //     challenge:
+  //       "Fragrance is the hardest product to sell online — you can't sample it through a screen. A storefront has to convey what a scent actually smells like using nothing but type, colour and structure, and it has to do that for eight distinct fragrances without collapsing into eight bespoke layouts.",
+  //     solution:
+  //       "I made colour carry meaning: every fragrance belongs to an accord family that owns a colour, bound as CSS custom properties and rebound by an `.accord-<family>` scope. Components never hardcode a family colour, so one code path renders all eight. Because several accords are too dark to read as text, each family carries a second lifted value for type — every combination clears WCAG AA, and the family name is always printed alongside the colour so it's never the sole carrier of meaning. The scent pyramid is a WAI-ARIA tabs pattern with roving tabindex and full keyboard support.",
+  //     results: [
+  //       "One component path serving eight fragrances and seven accord families",
+  //       "AA-contrast colour system with a dual-token scheme for legible accord type",
+  //       "Keyboard-navigable scent pyramid, cart and checkout with Luhn-validated fields",
+  //     ],
+  //   },
+  // },
+
   {
     slug: "lagoon-estates",
     title: "Lagoon Estates — Luxury Real Estate",
@@ -131,6 +107,32 @@ export const projects = [
         "Multi-page site: home, listings with live filtering, property galleries, agents, about, contact",
         "Naira pricing and Lagos neighbourhoods (Ikoyi, VI, Lekki, Eko Atlantic) throughout",
         "Fully content-driven — a client's branding and listings swap in from one folder",
+      ],
+    },
+  },
+
+    {
+    slug: "plumb",
+    title: "PLUMB — Made-to-Measure Fit Engine",
+    description:
+      "A menswear storefront that recommends your size from ease — garment minus body — instead of a generic size chart, with a fit finder and capsule builder.",
+    overview:
+      "A made-to-measure clothing house where every garment publishes its drafted flat measurements. Enter your body measurements and PLUMB recommends the size whose ease lands closest to how the pattern was drafted — the whole site reasons in ease, not S/M/L.",
+    image: "/images/plumb.jpg",
+    tech: ["Next.js", "JavaScript", "Tailwind CSS"],
+    liveUrl: "https://luxury-home-tau.vercel.app",
+    repoUrl: "https://github.com/Bossz-web/Luxury_home",
+    featured: true,
+    year: 2025,
+    caseStudy: {
+      challenge:
+        "Buying clothes online means guessing. Size charts list body measurements, not the garment's, so a shopper can't tell whether a piece will actually fit — and bad fit is the single biggest driver of returns in online apparel. Sizing needs to answer 'will this fit me?' directly, not 'what's your dress size?'.",
+      solution:
+        "I built a fit engine that reasons in ease — garment measurement minus body measurement. Every garment publishes the flat measurements it was drafted with; the app takes the shopper's body measurements and recommends the size whose ease at the governing measurement (chest for tops, seat for trousers) lands closest to the drafted intent. It's built on a drafting-paper design system where every measurement is tabular and aligned like a spec sheet, with a keyboard-navigable fit finder and a capsule builder that checks how a coordinated set layers together.",
+      results: [
+        "Size recommendation from ease at the governing measurement — chest for tops, seat for trousers",
+        "Every garment publishes drafted flat measurements, not just a body-size chart",
+        "Capsule builder that validates layering across a coordinated outfit",
       ],
     },
   },

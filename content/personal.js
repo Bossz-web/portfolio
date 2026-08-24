@@ -11,7 +11,7 @@ export const personalInfo = {
   headline: "Building fast, secure fintech interfaces for small, medium, and large-scale companies.",
   role: "Frontend Engineer",
   summary:
-    "A web developer with 2+ years working experience. I care about clean, accessible UIs and integrations that make financial tools unque, simpler and safer.",
+    "An experienced web developer who builds clean, accessible UIs and seamless integrations that make financial tools simpler, safer, and more effective.",
   bio: "A frontend engineer specializing in fintech, creating clean, scalable, and secure interfaces for companies of all sizes while delivering financial experiences users can trust",
   story: [
     "I'm a frontend engineer at MSME Labs, where I build and maintain web application for a small, medium and large scale companies.",

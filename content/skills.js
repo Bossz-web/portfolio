@@ -54,14 +54,14 @@ export const skillCategories = [
     icon: FileText,
     skills: ["Client-side PDF", "CSV Export", "XLSX Export"],
   },
-  {
-    name: "Currently Learning",
-    icon: Sparkles,
-    skills: [
-      "Node.js (Backend)",
-      "Advanced TypeScript Patterns",
-      "System Design",
-      "React Native",
-    ],
-  },
+  // {
+  //   name: "Currently Learning",
+  //   icon: Sparkles,
+  //   skills: [
+  //     "Node.js (Backend)",
+  //     "Advanced TypeScript Patterns",
+  //     "System Design",
+  //     "React Native",
+  //   ],
+  // },
 ];
