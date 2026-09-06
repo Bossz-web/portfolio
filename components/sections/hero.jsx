@@ -16,7 +16,7 @@ export function Hero() {
 
       <div className="container">
         {/* Text column */}
-        <div className="max-w-3xl">
+        <div className="max-w-3xl font-mono">
           {personalInfo.availability && (
             <motion.div
               initial={{ opacity: 0, y: 12 }}

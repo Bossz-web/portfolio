@@ -8,7 +8,7 @@ import { Github, Twitter, Mail, ShieldCheck, Wallet, Zap } from "lucide-react";
  */
 export const personalInfo = {
   name: "Lolade Kolawole",
-  headline: "Building fast, secure fintech interfaces for small, medium, and large-scale companies.",
+  headline: "Building fast, modern websites for businesses & brands.",
   role: "Frontend Engineer",
   summary:
     "An experienced web developer who builds clean, accessible UIs and seamless integrations that make financial tools simpler, safer, and more effective.",

@@ -38,7 +38,7 @@ export function Navbar() {
   const monogram = "LK";
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 px-4 pt-4 sm:pt-6">
+    <header className="fixed inset-x-0 font-mono top-0 z-50 px-4 pt-4 sm:pt-6">
       <nav
         className={cn(
           "mx-auto flex h-14 max-w-6xl items-center justify-between rounded-full pl-2 pr-2",

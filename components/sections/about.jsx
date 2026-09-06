@@ -8,14 +8,14 @@ import { Reveal, RevealGroup, RevealItem } from "@/components/ui/reveal";
 export function About() {
   return (
     <section id="about" className="section border-t border-border">
-      <div className="container">
+      <div className="container font-mono">
         <SectionHeading
           eyebrow="About"
-          title="A bit about who I am and how I work"
+          title="A bit about who I am."
           description={personalInfo.bio}
         />
 
-        <div className="mt-14 grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
+        <div className="mt-14 grid gap-12 font-sans lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
           {/* Portrait */}
           <Reveal className="relative mx-auto w-full max-w-sm">
             <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-border bg-muted shadow-soft">
